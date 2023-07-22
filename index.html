@@ -9,42 +9,34 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/flexbox.css">
-    <title>AluraPlay</title>
+    <title>DevPlay</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
-
 <body>
-
     <header>
-
         <nav class="cabecalho">
-            <h1 class="logo">Devs<span class="corte">/</span>Play</h1>
-
+            <a href="/index.html"><h1 class="logo">Dev<span class="corte">/</span>Play</h1></a>
             <div class="cabecalho__pesquisar">
-
                 <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input" data-search>
                 <button class="pesquisar__botao" data-botao-pesquisa>
-
             </div>
-
             <div class="cabecalho__icones">
                 <a href="./pages/enviar-video.html" class="cabecalho__videos"></a>
             </div>
         </nav>
-
     </header>
-
     <ul class="videos__containerTw" data-listaTw>
-
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </ul>
-
     <ul class="videos__container" alt="videos alura" data-lista>
-
     </ul>
+
     <script src="../js/jsTw/TwMostrarVideos.js" type="module"></script>
+    <script src="/js/jsTw/TwBuscaVideo.js" type="module"></script>
     <script src="/js/mostrarVideos.js" type="module"></script>
     <script src="/js/buscaVideo.js" type="module"></script>
+
 </body>
 
 </html>

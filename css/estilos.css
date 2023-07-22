@@ -119,6 +119,17 @@ body {
     justify-content: center;
 }
 
+.ancor__container {
+    display: flex;
+    justify-content: center;
+}
+
+.ancorTitle {
+    color: #00acee;
+    border: 1px solid #00acee;
+    padding: 10px;
+}
+
 @media(min-width: 834px) {
 
     body {

@@ -24,7 +24,6 @@ async function criaVideo(titulo, descricao, url, imagem) {
 async function buscaVideo(termoDeBusca) {
     const url = await fetch(`http://localhost:4000/videosYt?q=${termoDeBusca}`)
     const urlJson = await url.json()
-
     return urlJson
 }
 

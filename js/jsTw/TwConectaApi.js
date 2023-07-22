@@ -19,7 +19,14 @@ async function criaVideoTw(titulo, url) {
     return urlJson
 }
 
+async function buscaVideoTw(titulo) {
+    const urlSeach = await fetch(`http://localhost:3000/videosTw?q=${titulo}`)
+    const urlJson = await urlSeach.json()
+    return urlJson
+}
+
 export const connectApiTw = {
     listaVideosTw,
-    criaVideoTw
+    criaVideoTw,
+    buscaVideoTw
 }

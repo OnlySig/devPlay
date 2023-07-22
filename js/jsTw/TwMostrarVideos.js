@@ -2,16 +2,16 @@ import { connectApiTw } from "./TwConectaApi.js";
 
 const lista = document.querySelector('[data-listaTw]')
 
-function TwConstroiCard(title, url) {
+export default function TwConstroiCard(title, url) {
     const videoTw = document.createElement('li');
     videoTw.classList.add('videos__itemTw')
     videoTw.innerHTML = `
         <blockquote class="twitter-tweet">
-            <p>${title}</p>
+            <a class"ancor__container" href="${url}" target="_blank"><p class="ancorTitle">${title}</p></a>
             <p lang="pt" dir="ltr"></p>
             &mdash; <a href="${url}"></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </blockquote> 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         `
     return videoTw
 }
