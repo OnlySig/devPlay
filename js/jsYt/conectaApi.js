@@ -1,11 +1,11 @@
 async function listaVideos() {
-    const url = await fetch('http://localhost:4000/videosYt');
+    const url = await fetch('http://localhost:3000/videosYt');
     const urlJson = await url.json();
     return urlJson
 }
 
 async function criaVideo(titulo, descricao, url, imagem) {
-    const urlApi = await fetch('http://localhost:4000/videosYt', {
+    const urlApi = await fetch('http://localhost:3000/videosYt', {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -22,7 +22,7 @@ async function criaVideo(titulo, descricao, url, imagem) {
 }
 
 async function buscaVideo(termoDeBusca) {
-    const url = await fetch(`http://localhost:4000/videosYt?q=${termoDeBusca}`)
+    const url = await fetch(`http://localhost:3000/videosYt?q=${termoDeBusca}`)
     const urlJson = await url.json()
     return urlJson
 }

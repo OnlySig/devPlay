@@ -12,6 +12,7 @@
     <title>DevPlay</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
     <header>
@@ -22,21 +23,36 @@
                 <button class="pesquisar__botao" data-botao-pesquisa>
             </div>
             <div class="cabecalho__icones">
-                <a href="./pages/enviar-video.html" class="cabecalho__videos"></a>
+                <a href="./pages/enviar-videoYt.html" class="cabecalho__videos"></a>
+                <a href="./pages/enviar-videoTw.html" class="logoTw"></a>
+                <a href="./pages/enviar-videoRb.html" class="logoRb"></a>
             </div>
         </nav>
     </header>
+    <ul class="videos__containerRb" alt="videos alura" data-listaRb>
+    </ul>
+    <section class="middle__container">
+        <span class="line"></span>
+         <p class="item__text"><span class="rtext"> <i class="fa-solid fa-arrow-up"></i> rumble</span> <span class="middleDivision">|</span><span class="twtext"> twitter <i class="fa-solid fa-arrow-up fa-rotate-180"></i></span></p>
+        <span class="line"></span>
+     </section>
     <ul class="videos__containerTw" data-listaTw>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </ul>
+    <section class="middle__container">
+       <span class="line"></span>
+        <i class="fa-solid fa-arrow-up"></i>
+        <p class="item__text">twitter <span class="middleDivision">|</span><span class="ytext"> youtube</span></p>
+        <i class="fa-solid fa-arrow-up fa-rotate-180"></i>
+       <span class="line"></span>
+    </section>
     <ul class="videos__container" alt="videos alura" data-lista>
     </ul>
-
     <script src="../js/jsTw/TwMostrarVideos.js" type="module"></script>
     <script src="/js/jsTw/TwBuscaVideo.js" type="module"></script>
-    <script src="/js/mostrarVideos.js" type="module"></script>
-    <script src="/js/buscaVideo.js" type="module"></script>
-
+    <script src="/js/jsYt/buscaVideo.js" type="module"></script>
+    <script src="/js/jsYt/mostrarVideos.js" type="module"></script>
+    <script src="/js/jsRb/RbMostrarVideos.js" type="module"></script>
+    <script src="/js/jsRb/RbBuscaVideo.js" type="module"></script>
 </body>
-
 </html>

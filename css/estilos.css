@@ -21,7 +21,30 @@ body {
     box-sizing: border-box;
     text-align: center;
 }
+.middle__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #00acee;
+}
 
+.item__text {
+    display: flex;
+    gap: 5px;
+}
+
+.fa-arrow-up {
+    color: #00acee;
+}
+
+.fa-rotate-180 {
+    color: #c4302b;
+}
+
+.middleDivision {
+    color: black;
+}
 /* ESTILOS DO HEADER */
 
 .cabecalho {
@@ -32,6 +55,52 @@ body {
     width: 100%;
     padding: 0 25px;
     z-index: 2;
+}
+
+.line {
+    height: 1px;
+    width: 500px;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+.youtube {
+    color: #c4302b;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cabecalho__icones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rumble {
+    color: #85C742;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.rtext, .rtext i {
+    display: flex;
+    gap: 5px;
+    color: #85C742;
+}
+
+.twtext, .twtext i {
+    display: flex;
+    gap: 5px;
+    color: #00acee;
+}
+
+.logoRb {
+    background: url("/img/VectorRb.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
 }
 
 .logo {
@@ -63,7 +132,7 @@ body {
 }
 
 .cabecalho__videos {
-    background-image: url(../img/cabecalho/video_call.png);
+    background-image: url(../img/logos_youtube-icon.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -128,6 +197,30 @@ body {
     color: #00acee;
     border: 1px solid #00acee;
     padding: 10px;
+}
+
+.ytext {
+    color: #c4302b;
+}
+
+.titleRb {
+    color: #85C742;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 596px) {
+    .cabecalho__pesquisar {
+        width: 100px;
+    }
+    .pesquisar__input {
+        width: 100px;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    .cabecalho__icones {
+        gap: 5px;
+    }
 }
 
 @media(min-width: 834px) {

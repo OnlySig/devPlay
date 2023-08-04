@@ -4,7 +4,7 @@ const lista = document.querySelector('[data-listaTw]')
 
 export default function TwConstroiCard(title, url) {
     const videoTw = document.createElement('li');
-    videoTw.classList.add('videos__itemTw')
+    videoTw.classList.add('videos__itemTw');
     videoTw.innerHTML = `
         <blockquote class="twitter-tweet">
             <a class"ancor__container" href="${url}" target="_blank"><p class="ancorTitle">${title}</p></a>

@@ -77,5 +77,49 @@
       "imagem": "https://yt3.ggpht.com/JiUOoxC6Ds3LjrqZqhZN_FamGVW7zl1DkYhfwu5ejyYWo6HwYuBAooHfTXUXUQ8K1yv4fh7gkg=s48-c-k-c0x00ffffff-no-rj",
       "id": 14
     }
+  ],
+  "videosTw": [
+    {
+      "id": 1,
+      "titulo": "Isso é o mais puro suco de Brasil",
+      "url": "https://twitter.com/i/status/1681497451100872705"
+    },
+    {
+      "id": 2,
+      "titulo": "sla kkkkkkkk",
+      "url": "https://twitter.com/i/status/1681455747916529664"
+    },
+    {
+      "id": 3,
+      "titulo": "Ce viu bacon?",
+      "url": "https://twitter.com/i/status/1681506628279861248"
+    },
+    {
+      "titulo": "Genero Based",
+      "url": "https://twitter.com/i/status/1681998536890630144",
+      "id": 4
+    },
+    {
+      "titulo": "filtro de barro jkkkkkkkkkk",
+      "url": "https://twitter.com/i/status/1682061436997042177",
+      "id": 5
+    }
+  ],
+  "videosRb": [
+    {
+      "id": 1,
+      "titulo": "ReactJS Chrome Extension - Injecting External Files",
+      "url": "https://rumble.com/embed/v2jzqtt/?pub=12001b"
+    },
+    {
+      "titulo": "JavaScript tutorial for beginners",
+      "url": "https://rumble.com/embed/v30vwg6/?pub=12001b",
+      "id": 2
+    },
+    {
+      "titulo": "JavaScript DOM Tutorial for Beginners",
+      "url": "https://rumble.com/embed/va9s2b/?pub=12001b",
+      "id": 3
+    }
   ]
 }

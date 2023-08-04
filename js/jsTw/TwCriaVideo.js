@@ -1,6 +1,5 @@
 import { connectApiTw } from "./TwConectaApi.js";
-
-const formularioTw = document.querySelector("[data-formulario]")
+const formularioTw = document.querySelector("[data-formulario]");
 
 async function criarVideoTw(event, titulo, url) {
     event.preventDefault();

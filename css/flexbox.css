@@ -7,12 +7,19 @@
 
 /* SEÇÃO VÍDEOS */
 
+.videos__containerRb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    z-index: 1;
+    padding: 100px 139px 30px 139px;
+}
+
 .videos__containerTw {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     z-index: 1;
-    padding: 120px 180px 0px 180px;
 }
 
 .videos__container {
@@ -20,7 +27,7 @@
     flex-wrap: wrap;
     gap: 10px;
     z-index: 1;
-    padding: 50px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 .videos__item {
@@ -29,10 +36,16 @@
     width: 300px;
 }
 
+.videos__itemRb {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+
 .videos__itemTw {
     width: 300px;
     flex-grow: 1;
-    flex-wrap: wrap;
 }
 
 /* grid vídeos */
@@ -69,15 +82,71 @@
 }
 
 @media(min-width: 834px) {
-
     .videos__container {
         padding-left: 10%;
         padding-right: 10%;
     }
+    .videos__containerTw {
+        padding: 10px;
+    }
 }
 
-@media(min-width: 1440px) {
+@media(max-width: 350px) {
+    .pesquisar__botao {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .videos__containerRb {
+        justify-content: center;
+    }
+}
+
+@media(min-width: 700px) {
+    .videos__containerRb, .videos__containerTw {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+
+@media(max-width: 797px) {
+    .videos__containerRb {
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1300px) {
     .videos__item {
         width: 288px;
+    }
+
+    .videos__container {
+        padding-top: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .middle__container {
+        padding: 20px;
+    }
+
+    .videos__containerTw, .videos__container {
+        padding: 0 100px;
+    }
+
+    .videos__containerRb {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media(min-width: 1920px) {
+    .videos__containerRb, .videos__container {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    .videos__containerTw {
+        padding: 0 130px;
     }
 }

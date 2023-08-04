@@ -13,14 +13,16 @@
     <title>DevPlay</title>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
+
         <nav class="cabecalho">
             <a href="/index.html"><h1 class="logo">Dev<span class="corte">/</span>Play</h1></a>
             <div class="cabecalho__icones">
-                <p class="twitter">Apenas links do twitter!</p>
-                <a href="./enviar-videoYt.html" class="cabecalho__videos"></a>
+                <p class="youtube">Apenas links do youtube!</p>
                 <a href="./enviar-videoRb.html" class="logoRb"></a>
+                <a href="./enviar-videoTw.html" class="logoTw"></a>
             </div>
         </nav>
     </header>
@@ -28,18 +30,23 @@
         <form class="container__formulario" data-formulario>
             <h2 class="formulario__titulo">Envie um vídeo!</h3>
                 <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="url">Link embed</label>
+                    <input name="url" class="campo__escrita" required
+                        placeholder="Exemplo: https://www.youtube.com/embed/FAY1K2aUg5g" id='url' data-url/>
+                </div>
+                <div class="formulario__campo">
                     <label class="campo__etiqueta" for="titulo">Titulo do vídeo</label>
                     <input name="titulo" class="campo__escrita" required placeholder="Neste campo, dê o nome do vídeo"
                         id='titulo' data-titulo/>
                 </div>
                 <div class="formulario__campo">
-                    <label class="campo__etiqueta" for="url">Link</label>
-                    <input name="url" class="campo__escrita" required
-                        placeholder="Exemplo: https://twitter.com/i/status/1681981366098100225" id='url' data-url/>
+                    <label class="campo__etiqueta" for="imagem">Imagem de perfil</label>
+                    <input name="imagem" class="campo__escrita" required placeholder="Insira a url da imagem"
+                        id='imagem' data-imagem/>
                 </div>
                 <input class="formulario__botao" type="submit" />
         </form>
     </main>
-    <script src="/js/jsTw/TwCriaVideo.js" type="module"></script>
+    <script src="/js/jsYt/criarVideo.js" type="module"></script>
 </body>
 </html>
